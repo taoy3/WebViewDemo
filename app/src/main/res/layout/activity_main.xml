@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.taoy3.webviewdemo.MainActivity">
+    <Button
+        android:id="@+id/back"
+        android:background="@null"
+        android:text="返回"
+        android:minHeight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:drawableLeft="@android:drawable/menuitem_background"/>
+
+    <TextView
+        android:text="bianti"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toLeftOf="@+id/refresh"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/refresh"
+        android:background="@null"
+        android:minHeight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="刷新"/>
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_below="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
